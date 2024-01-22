@@ -21,4 +21,4 @@ const createInstance = (baseURL: string): AxiosInstance => {
   return instance
 }
 
-export const instance = createInstance(process.env.REACT_APP_BASE_URL ?? '')
+export const instance = createInstance(`${process.env.REACT_APP_BASE_URL}` ?? '')
